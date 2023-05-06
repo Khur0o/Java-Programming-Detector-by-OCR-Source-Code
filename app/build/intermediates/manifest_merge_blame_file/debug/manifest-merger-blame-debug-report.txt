@@ -1,0 +1,1337 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.j_idetect"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:5:5-65
+11-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:5:22-62
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+14-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:8:5-82
+14-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:8:22-79
+15
+16    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+17    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\120a151daddca3044a3478db6b931538\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:24:5-79
+18-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\120a151daddca3044a3478db6b931538\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:24:22-76
+19    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+19-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\3f7f022b41aa7986f901392bbc29f3ed\transformed\jetified-firebase-iid-20.0.1\AndroidManifest.xml:24:5-68
+19-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\3f7f022b41aa7986f901392bbc29f3ed\transformed\jetified-firebase-iid-20.0.1\AndroidManifest.xml:24:22-65
+20    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+20-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\3f7f022b41aa7986f901392bbc29f3ed\transformed\jetified-firebase-iid-20.0.1\AndroidManifest.xml:26:5-82
+20-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\3f7f022b41aa7986f901392bbc29f3ed\transformed\jetified-firebase-iid-20.0.1\AndroidManifest.xml:26:22-79
+21    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+21-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\f702fa6305e5ea0e9d8cd79d521a87cd\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:25:5-79
+21-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\f702fa6305e5ea0e9d8cd79d521a87cd\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:25:22-76
+22    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+22-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\bf96aa919d4bed3dc2dba8bfaac2f6d9\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:26:5-110
+22-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\bf96aa919d4bed3dc2dba8bfaac2f6d9\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:26:22-107
+23
+24    <application
+24-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:10:5-534:19
+25        android:allowBackup="true"
+25-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:11:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.8.0] C:\Users\Kuro\.gradle\caches\transforms-3\102215101d21fdb02f0f27bbfd4ebd5d\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+27        android:dataExtractionRules="@xml/data_extraction_rules"
+27-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:12:9-65
+28        android:debuggable="true"
+29        android:extractNativeLibs="false"
+30        android:fullBackupContent="@xml/backup_rules"
+30-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:13:9-54
+31        android:icon="@drawable/logo"
+31-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:14:9-38
+32        android:label="@string/app_name"
+32-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:15:9-41
+33        android:requestLegacyExternalStorage="true"
+33-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:16:9-52
+34        android:roundIcon="@drawable/logo"
+34-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:17:9-43
+35        android:supportsRtl="true"
+35-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:18:9-35
+36        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+36-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:19:9-68
+37        <provider
+38            android:name="androidx.core.content.FileProvider"
+38-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:22:13-62
+39            android:authorities="com.example.j_idetect.provider"
+39-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:23:13-60
+40            android:exported="false"
+40-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:24:13-37
+41            android:grantUriPermissions="true" >
+41-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:25:13-47
+42            <meta-data
+42-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:26:13-28:57
+43                android:name="android.support.FILE_PROVIDER_PATHS"
+43-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:27:17-67
+44                android:resource="@xml/provider_paths" />
+44-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:28:17-55
+45        </provider>
+46
+47        <activity
+47-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:30:9-38:20
+48            android:name="com.example.j_idetect.RESULT03"
+48-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:31:13-37
+49            android:exported="false"
+49-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:32:13-37
+50            android:screenOrientation="portrait"
+50-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:33:13-49
+51            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+51-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:34:13-69
+52            <meta-data
+52-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+53                android:name="android.app.lib_name"
+53-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+54                android:value="" />
+54-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+55        </activity>
+56        <activity
+56-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:39:9-46:20
+57            android:name="com.example.j_idetect.TEST0310"
+57-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:40:13-37
+58            android:exported="false"
+58-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:41:13-37
+59            android:screenOrientation="portrait" >
+59-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:42:13-49
+60            <meta-data
+60-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+61                android:name="android.app.lib_name"
+61-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+62                android:value="" />
+62-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+63        </activity>
+64        <activity
+64-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:47:9-54:20
+65            android:name="com.example.j_idetect.TEST039"
+65-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:48:13-36
+66            android:exported="false"
+66-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:49:13-37
+67            android:screenOrientation="portrait" >
+67-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:50:13-49
+68            <meta-data
+68-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+69                android:name="android.app.lib_name"
+69-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+70                android:value="" />
+70-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+71        </activity>
+72        <activity
+72-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:55:9-62:20
+73            android:name="com.example.j_idetect.TEST038"
+73-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:56:13-36
+74            android:exported="false"
+74-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:57:13-37
+75            android:screenOrientation="portrait" >
+75-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:58:13-49
+76            <meta-data
+76-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+77                android:name="android.app.lib_name"
+77-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+78                android:value="" />
+78-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+79        </activity>
+80        <activity
+80-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:63:9-70:20
+81            android:name="com.example.j_idetect.TEST037"
+81-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:64:13-36
+82            android:exported="false"
+82-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:65:13-37
+83            android:screenOrientation="portrait" >
+83-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:66:13-49
+84            <meta-data
+84-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+85                android:name="android.app.lib_name"
+85-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+86                android:value="" />
+86-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+87        </activity>
+88        <activity
+88-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:71:9-78:20
+89            android:name="com.example.j_idetect.TEST036"
+89-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:72:13-36
+90            android:exported="false"
+90-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:73:13-37
+91            android:screenOrientation="portrait" >
+91-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:74:13-49
+92            <meta-data
+92-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+93                android:name="android.app.lib_name"
+93-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+94                android:value="" />
+94-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+95        </activity>
+96        <activity
+96-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:79:9-86:20
+97            android:name="com.example.j_idetect.TEST035"
+97-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:80:13-36
+98            android:exported="false"
+98-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:81:13-37
+99            android:screenOrientation="portrait" >
+99-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:82:13-49
+100            <meta-data
+100-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+101                android:name="android.app.lib_name"
+101-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+102                android:value="" />
+102-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+103        </activity>
+104        <activity
+104-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:87:9-94:20
+105            android:name="com.example.j_idetect.TEST034"
+105-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:88:13-36
+106            android:exported="false"
+106-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:89:13-37
+107            android:screenOrientation="portrait" >
+107-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:90:13-49
+108            <meta-data
+108-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+109                android:name="android.app.lib_name"
+109-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+110                android:value="" />
+110-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+111        </activity>
+112        <activity
+112-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:95:9-102:20
+113            android:name="com.example.j_idetect.TEST033"
+113-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:96:13-36
+114            android:exported="false"
+114-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:97:13-37
+115            android:screenOrientation="portrait" >
+115-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:98:13-49
+116            <meta-data
+116-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+117                android:name="android.app.lib_name"
+117-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+118                android:value="" />
+118-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+119        </activity>
+120        <activity
+120-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:103:9-110:20
+121            android:name="com.example.j_idetect.TEST032"
+121-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:104:13-36
+122            android:exported="false"
+122-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:105:13-37
+123            android:screenOrientation="portrait" >
+123-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:106:13-49
+124            <meta-data
+124-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+125                android:name="android.app.lib_name"
+125-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+126                android:value="" />
+126-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+127        </activity>
+128        <activity
+128-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:111:9-119:20
+129            android:name="com.example.j_idetect.TEST031"
+129-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:112:13-36
+130            android:exported="false"
+130-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:113:13-37
+131            android:screenOrientation="portrait" >
+131-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:114:13-49
+132            <meta-data
+132-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+133                android:name="android.app.lib_name"
+133-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+134                android:value="" />
+134-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+135        </activity>
+136        <activity
+136-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:120:9-128:20
+137            android:name="com.example.j_idetect.TEST03"
+137-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:121:13-35
+138            android:exported="false"
+138-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:122:13-37
+139            android:screenOrientation="portrait"
+139-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:123:13-49
+140            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+140-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:124:13-69
+141            <meta-data
+141-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+142                android:name="android.app.lib_name"
+142-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+143                android:value="" />
+143-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+144        </activity>
+145        <activity
+145-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:129:9-137:20
+146            android:name="com.example.j_idetect.RESULT02"
+146-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:130:13-37
+147            android:exported="false"
+147-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:131:13-37
+148            android:screenOrientation="portrait"
+148-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:132:13-49
+149            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+149-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:133:13-69
+150            <meta-data
+150-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+151                android:name="android.app.lib_name"
+151-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+152                android:value="" />
+152-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+153        </activity>
+154        <activity
+154-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:138:9-146:20
+155            android:name="com.example.j_idetect.RESULT01"
+155-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:139:13-37
+156            android:exported="false"
+156-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:140:13-37
+157            android:screenOrientation="portrait"
+157-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:141:13-49
+158            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+158-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:142:13-69
+159            <meta-data
+159-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+160                android:name="android.app.lib_name"
+160-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+161                android:value="" />
+161-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+162        </activity>
+163        <activity
+164            android:name="com.example.j_idetect.CERT"
+164-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:148:13-33
+165            android:authorities="com.example.j_idetect.provider"
+165-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:152:13-60
+166            android:exported="false"
+166-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:149:13-37
+167            android:screenOrientation="portrait"
+167-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:150:13-49
+168            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+168-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:151:13-69
+169            <meta-data
+169-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+170                android:name="android.app.lib_name"
+170-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+171                android:resource="@xml/provider_paths"
+171-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:156:17-55
+172                android:value="" />
+172-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+173        </activity>
+174        <activity
+174-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:158:9-165:20
+175            android:name="com.example.j_idetect.TEST0210"
+175-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:159:13-37
+176            android:exported="false"
+176-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:160:13-37
+177            android:screenOrientation="portrait" >
+177-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:161:13-49
+178            <meta-data
+178-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+179                android:name="android.app.lib_name"
+179-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+180                android:value="" />
+180-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+181        </activity>
+182        <activity
+182-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:166:9-173:20
+183            android:name="com.example.j_idetect.TEST029"
+183-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:167:13-36
+184            android:exported="false"
+184-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:168:13-37
+185            android:screenOrientation="portrait" >
+185-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:169:13-49
+186            <meta-data
+186-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+187                android:name="android.app.lib_name"
+187-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+188                android:value="" />
+188-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+189        </activity>
+190        <activity
+190-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:174:9-181:20
+191            android:name="com.example.j_idetect.TEST028"
+191-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:175:13-36
+192            android:exported="false"
+192-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:176:13-37
+193            android:screenOrientation="portrait" >
+193-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:177:13-49
+194            <meta-data
+194-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+195                android:name="android.app.lib_name"
+195-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+196                android:value="" />
+196-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+197        </activity>
+198        <activity
+198-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:182:9-189:20
+199            android:name="com.example.j_idetect.TEST027"
+199-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:183:13-36
+200            android:exported="false"
+200-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:184:13-37
+201            android:screenOrientation="portrait" >
+201-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:185:13-49
+202            <meta-data
+202-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+203                android:name="android.app.lib_name"
+203-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+204                android:value="" />
+204-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+205        </activity>
+206        <activity
+206-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:190:9-197:20
+207            android:name="com.example.j_idetect.TEST026"
+207-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:191:13-36
+208            android:exported="false"
+208-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:192:13-37
+209            android:screenOrientation="portrait" >
+209-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:193:13-49
+210            <meta-data
+210-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+211                android:name="android.app.lib_name"
+211-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+212                android:value="" />
+212-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+213        </activity>
+214        <activity
+214-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:198:9-205:20
+215            android:name="com.example.j_idetect.TEST025"
+215-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:199:13-36
+216            android:exported="false"
+216-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:200:13-37
+217            android:screenOrientation="portrait" >
+217-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:201:13-49
+218            <meta-data
+218-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+219                android:name="android.app.lib_name"
+219-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+220                android:value="" />
+220-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+221        </activity>
+222        <activity
+222-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:206:9-213:20
+223            android:name="com.example.j_idetect.TEST024"
+223-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:207:13-36
+224            android:exported="false"
+224-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:208:13-37
+225            android:screenOrientation="portrait" >
+225-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:209:13-49
+226            <meta-data
+226-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+227                android:name="android.app.lib_name"
+227-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+228                android:value="" />
+228-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+229        </activity>
+230        <activity
+230-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:214:9-221:20
+231            android:name="com.example.j_idetect.TEST023"
+231-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:215:13-36
+232            android:exported="false"
+232-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:216:13-37
+233            android:screenOrientation="portrait" >
+233-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:217:13-49
+234            <meta-data
+234-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+235                android:name="android.app.lib_name"
+235-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+236                android:value="" />
+236-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+237        </activity>
+238        <activity
+238-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:222:9-229:20
+239            android:name="com.example.j_idetect.TEST022"
+239-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:223:13-36
+240            android:exported="false"
+240-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:224:13-37
+241            android:screenOrientation="portrait" >
+241-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:225:13-49
+242            <meta-data
+242-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+243                android:name="android.app.lib_name"
+243-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+244                android:value="" />
+244-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+245        </activity>
+246        <activity
+246-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:230:9-237:20
+247            android:name="com.example.j_idetect.TEST021"
+247-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:231:13-36
+248            android:exported="false"
+248-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:232:13-37
+249            android:screenOrientation="portrait" >
+249-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:233:13-49
+250            <meta-data
+250-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+251                android:name="android.app.lib_name"
+251-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+252                android:value="" />
+252-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+253        </activity>
+254        <activity
+254-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:238:9-246:20
+255            android:name="com.example.j_idetect.TEST02"
+255-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:239:13-35
+256            android:exported="false"
+256-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:240:13-37
+257            android:screenOrientation="portrait"
+257-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:241:13-49
+258            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+258-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:242:13-69
+259            <meta-data
+259-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+260                android:name="android.app.lib_name"
+260-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+261                android:value="" />
+261-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+262        </activity>
+263        <activity
+263-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:247:9-254:20
+264            android:name="com.example.j_idetect.TEST0110"
+264-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:248:13-37
+265            android:exported="false"
+265-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:249:13-37
+266            android:screenOrientation="portrait" >
+266-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:250:13-49
+267            <meta-data
+267-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+268                android:name="android.app.lib_name"
+268-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+269                android:value="" />
+269-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+270        </activity>
+271        <activity
+271-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:255:9-262:20
+272            android:name="com.example.j_idetect.TEST019"
+272-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:256:13-36
+273            android:exported="false"
+273-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:257:13-37
+274            android:screenOrientation="portrait" >
+274-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:258:13-49
+275            <meta-data
+275-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+276                android:name="android.app.lib_name"
+276-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+277                android:value="" />
+277-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+278        </activity>
+279        <activity
+279-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:263:9-270:20
+280            android:name="com.example.j_idetect.TEST018"
+280-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:264:13-36
+281            android:exported="false"
+281-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:265:13-37
+282            android:screenOrientation="portrait" >
+282-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:266:13-49
+283            <meta-data
+283-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+284                android:name="android.app.lib_name"
+284-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+285                android:value="" />
+285-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+286        </activity>
+287        <activity
+287-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:271:9-278:20
+288            android:name="com.example.j_idetect.TEST017"
+288-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:272:13-36
+289            android:exported="false"
+289-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:273:13-37
+290            android:screenOrientation="portrait" >
+290-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:274:13-49
+291            <meta-data
+291-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+292                android:name="android.app.lib_name"
+292-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+293                android:value="" />
+293-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+294        </activity>
+295        <activity
+295-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:279:9-286:20
+296            android:name="com.example.j_idetect.TEST016"
+296-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:280:13-36
+297            android:exported="false"
+297-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:281:13-37
+298            android:screenOrientation="portrait" >
+298-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:282:13-49
+299            <meta-data
+299-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+300                android:name="android.app.lib_name"
+300-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+301                android:value="" />
+301-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+302        </activity>
+303        <activity
+303-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:287:9-294:20
+304            android:name="com.example.j_idetect.TEST015"
+304-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:288:13-36
+305            android:exported="false"
+305-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:289:13-37
+306            android:screenOrientation="portrait" >
+306-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:290:13-49
+307            <meta-data
+307-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+308                android:name="android.app.lib_name"
+308-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+309                android:value="" />
+309-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+310        </activity>
+311        <activity
+311-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:295:9-302:20
+312            android:name="com.example.j_idetect.TEST014"
+312-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:296:13-36
+313            android:exported="false"
+313-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:297:13-37
+314            android:screenOrientation="portrait" >
+314-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:298:13-49
+315            <meta-data
+315-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+316                android:name="android.app.lib_name"
+316-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+317                android:value="" />
+317-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+318        </activity>
+319        <activity
+319-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:303:9-310:20
+320            android:name="com.example.j_idetect.TEST013"
+320-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:304:13-36
+321            android:exported="false"
+321-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:305:13-37
+322            android:screenOrientation="portrait" >
+322-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:306:13-49
+323            <meta-data
+323-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+324                android:name="android.app.lib_name"
+324-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+325                android:value="" />
+325-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+326        </activity>
+327        <activity
+327-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:311:9-318:20
+328            android:name="com.example.j_idetect.TEST012"
+328-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:312:13-36
+329            android:exported="false"
+329-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:313:13-37
+330            android:screenOrientation="portrait" >
+330-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:314:13-49
+331            <meta-data
+331-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+332                android:name="android.app.lib_name"
+332-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+333                android:value="" />
+333-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+334        </activity>
+335        <activity
+335-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:319:9-326:20
+336            android:name="com.example.j_idetect.TEST011"
+336-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:320:13-36
+337            android:exported="false"
+337-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:321:13-37
+338            android:screenOrientation="portrait" >
+338-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:322:13-49
+339            <meta-data
+339-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+340                android:name="android.app.lib_name"
+340-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+341                android:value="" />
+341-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+342        </activity>
+343        <activity
+343-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:327:9-335:20
+344            android:name="com.example.j_idetect.ForgetPass"
+344-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:328:13-39
+345            android:exported="false"
+345-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:329:13-37
+346            android:screenOrientation="portrait"
+346-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:330:13-49
+347            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+347-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:331:13-69
+348            <meta-data
+348-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+349                android:name="android.app.lib_name"
+349-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+350                android:value="" />
+350-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+351        </activity>
+352        <activity
+352-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:336:9-344:20
+353            android:name="com.example.j_idetect.TEST01"
+353-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:337:13-35
+354            android:exported="false"
+354-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:338:13-37
+355            android:screenOrientation="portrait"
+355-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:339:13-49
+356            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+356-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:340:13-69
+357            <meta-data
+357-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+358                android:name="android.app.lib_name"
+358-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+359                android:value="" />
+359-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+360        </activity>
+361        <activity
+361-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:345:9-353:20
+362            android:name="com.example.j_idetect.ACCOUNTpass"
+362-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:346:13-40
+363            android:exported="false"
+363-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:347:13-37
+364            android:screenOrientation="portrait"
+364-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:348:13-49
+365            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+365-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:349:13-69
+366            <meta-data
+366-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+367                android:name="android.app.lib_name"
+367-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+368                android:value="" />
+368-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+369        </activity>
+370        <activity
+370-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:354:9-362:20
+371            android:name="com.example.j_idetect.ACCOUNTemail"
+371-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:355:13-41
+372            android:exported="false"
+372-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:356:13-37
+373            android:screenOrientation="portrait"
+373-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:357:13-49
+374            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+374-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:358:13-69
+375            <meta-data
+375-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+376                android:name="android.app.lib_name"
+376-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+377                android:value="" />
+377-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+378        </activity>
+379        <activity
+379-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:363:9-371:20
+380            android:name="com.example.j_idetect.ACCOUNTname"
+380-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:364:13-40
+381            android:exported="false"
+381-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:365:13-37
+382            android:screenOrientation="portrait"
+382-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:366:13-49
+383            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+383-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:367:13-69
+384            <meta-data
+384-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+385                android:name="android.app.lib_name"
+385-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+386                android:value="" />
+386-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+387        </activity>
+388        <activity
+388-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:372:9-379:20
+389            android:name="com.example.j_idetect.JAVAkeywords"
+389-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:373:13-41
+390            android:exported="false"
+390-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:374:13-37
+391            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+391-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:375:13-69
+392            <meta-data
+392-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+393                android:name="android.app.lib_name"
+393-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+394                android:value="" />
+394-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+395        </activity>
+396        <activity
+396-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:380:9-387:20
+397            android:name="com.example.j_idetect.JAVAexception"
+397-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:381:13-42
+398            android:exported="false"
+398-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:382:13-37
+399            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+399-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:383:13-69
+400            <meta-data
+400-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+401                android:name="android.app.lib_name"
+401-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+402                android:value="" />
+402-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+403        </activity>
+404        <activity
+404-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:388:9-395:20
+405            android:name="com.example.j_idetect.JAVAstring"
+405-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:389:13-39
+406            android:exported="false"
+406-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:390:13-37
+407            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+407-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:391:13-69
+408            <meta-data
+408-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+409                android:name="android.app.lib_name"
+409-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+410                android:value="" />
+410-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+411        </activity>
+412        <activity
+412-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:396:9-403:20
+413            android:name="com.example.j_idetect.JAVAarray"
+413-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:397:13-38
+414            android:exported="false"
+414-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:398:13-37
+415            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+415-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:399:13-69
+416            <meta-data
+416-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+417                android:name="android.app.lib_name"
+417-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+418                android:value="" />
+418-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+419        </activity>
+420        <activity
+420-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:404:9-411:20
+421            android:name="com.example.j_idetect.JAVAloops"
+421-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:405:13-38
+422            android:exported="false"
+422-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:406:13-37
+423            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+423-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:407:13-69
+424            <meta-data
+424-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+425                android:name="android.app.lib_name"
+425-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+426                android:value="" />
+426-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+427        </activity>
+428        <activity
+428-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:412:9-419:20
+429            android:name="com.example.j_idetect.JAVAflow"
+429-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:413:13-37
+430            android:exported="false"
+430-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:414:13-37
+431            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+431-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:415:13-69
+432            <meta-data
+432-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+433                android:name="android.app.lib_name"
+433-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+434                android:value="" />
+434-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+435        </activity>
+436        <activity
+436-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:420:9-427:20
+437            android:name="com.example.j_idetect.JAVApack"
+437-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:421:13-37
+438            android:exported="false"
+438-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:422:13-37
+439            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+439-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:423:13-69
+440            <meta-data
+440-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+441                android:name="android.app.lib_name"
+441-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+442                android:value="" />
+442-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+443        </activity>
+444        <activity
+444-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:428:9-435:20
+445            android:name="com.example.j_idetect.JAVAop"
+445-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:429:13-35
+446            android:exported="false"
+446-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:430:13-37
+447            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+447-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:431:13-69
+448            <meta-data
+448-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+449                android:name="android.app.lib_name"
+449-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+450                android:value="" />
+450-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+451        </activity>
+452        <activity
+452-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:436:9-443:20
+453            android:name="com.example.j_idetect.JAVAdata"
+453-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:437:13-37
+454            android:exported="false"
+454-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:438:13-37
+455            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+455-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:439:13-69
+456            <meta-data
+456-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+457                android:name="android.app.lib_name"
+457-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+458                android:value="" />
+458-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+459        </activity>
+460        <activity
+460-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:444:9-451:20
+461            android:name="com.example.j_idetect.JAVAbasic"
+461-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:445:13-38
+462            android:exported="false"
+462-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:446:13-37
+463            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+463-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:447:13-69
+464            <meta-data
+464-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+465                android:name="android.app.lib_name"
+465-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+466                android:value="" />
+466-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+467        </activity>
+468        <activity
+468-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:452:9-460:20
+469            android:name="com.example.j_idetect.ACCOUNT"
+469-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:453:13-36
+470            android:exported="false"
+470-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:454:13-37
+471            android:screenOrientation="portrait"
+471-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:455:13-49
+472            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+472-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:456:13-69
+473            <meta-data
+473-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+474                android:name="android.app.lib_name"
+474-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+475                android:value="" />
+475-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+476        </activity>
+477        <activity
+477-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:461:9-469:20
+478            android:name="com.example.j_idetect.TEST"
+478-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:462:13-33
+479            android:exported="false"
+479-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:463:13-37
+480            android:screenOrientation="portrait"
+480-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:464:13-49
+481            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+481-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:465:13-69
+482            <meta-data
+482-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+483                android:name="android.app.lib_name"
+483-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+484                android:value="" />
+484-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+485        </activity>
+486        <activity
+486-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:470:9-478:20
+487            android:name="com.example.j_idetect.COMPILER"
+487-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:471:13-37
+488            android:exported="false"
+488-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:472:13-37
+489            android:screenOrientation="portrait"
+489-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:473:13-49
+490            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+490-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:474:13-69
+491            <meta-data
+491-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+492                android:name="android.app.lib_name"
+492-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+493                android:value="" />
+493-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+494        </activity>
+495
+496        <meta-data
+496-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:480:9-482:35
+497            android:name="com.google.mlkit.vision.DEPENDENCIES"
+497-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:481:13-64
+498            android:value="ocr" />
+498-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:482:13-32
+499
+500        <activity
+500-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:484:9-491:20
+501            android:name="com.example.j_idetect.TUTORIAL"
+501-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:485:13-37
+502            android:exported="false"
+502-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:486:13-37
+503            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+503-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:487:13-69
+504            <meta-data
+504-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+505                android:name="android.app.lib_name"
+505-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+506                android:value="" />
+506-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+507        </activity>
+508        <activity
+508-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:492:9-500:20
+509            android:name="com.example.j_idetect.OCR"
+509-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:493:13-32
+510            android:exported="false"
+510-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:494:13-37
+511            android:screenOrientation="portrait"
+511-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:495:13-49
+512            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+512-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:496:13-69
+513            <meta-data
+513-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+514                android:name="android.app.lib_name"
+514-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+515                android:value="" />
+515-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+516        </activity>
+517        <activity
+517-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:501:9-515:20
+518            android:name="com.example.j_idetect.Login"
+518-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:502:13-34
+519            android:exported="true"
+519-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:503:13-36
+520            android:screenOrientation="portrait"
+520-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:504:13-49
+521            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+521-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:505:13-69
+522            <intent-filter>
+522-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:506:13-510:29
+523                <action android:name="android.intent.action.MAIN" />
+523-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:507:17-69
+523-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:507:25-66
+524
+525                <category android:name="android.intent.category.LAUNCHER" />
+525-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:509:17-77
+525-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:509:27-74
+526            </intent-filter>
+527
+528            <meta-data
+528-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+529                android:name="android.app.lib_name"
+529-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+530                android:value="" />
+530-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+531        </activity>
+532        <activity
+532-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:516:9-524:20
+533            android:name="com.example.j_idetect.Register"
+533-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:517:13-37
+534            android:exported="false"
+534-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:518:13-37
+535            android:screenOrientation="portrait"
+535-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:519:13-49
+536            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+536-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:520:13-69
+537            <meta-data
+537-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+538                android:name="android.app.lib_name"
+538-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+539                android:value="" />
+539-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+540        </activity>
+541        <activity
+541-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:525:9-533:20
+542            android:name="com.example.j_idetect.MainActivity"
+542-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:526:13-41
+543            android:exported="false"
+543-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:527:13-37
+544            android:screenOrientation="portrait"
+544-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:528:13-49
+545            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+545-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:529:13-69
+546            <meta-data
+546-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:35:13-37:36
+547                android:name="android.app.lib_name"
+547-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:36:17-52
+548                android:value="" />
+548-->C:\Users\Kuro\Documents\J-IDetect\app\src\main\AndroidManifest.xml:37:17-33
+549        </activity>
+550
+551        <service
+551-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\120a151daddca3044a3478db6b931538\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
+552            android:name="com.google.firebase.components.ComponentDiscoveryService"
+552-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\120a151daddca3044a3478db6b931538\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:29:13-84
+553            android:directBootAware="true"
+553-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+554            android:exported="false" >
+554-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\120a151daddca3044a3478db6b931538\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:30:13-37
+555            <meta-data
+555-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\120a151daddca3044a3478db6b931538\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
+556                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+556-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\120a151daddca3044a3478db6b931538\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:32:17-109
+557                android:value="com.google.firebase.components.ComponentRegistrar" />
+557-->[com.google.firebase:firebase-database:20.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\120a151daddca3044a3478db6b931538\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:33:17-82
+558            <meta-data
+558-->[com.google.firebase:firebase-ml-vision:24.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\268b4a3c7736f9987a726c3ce41196fa\transformed\jetified-firebase-ml-vision-24.1.0\AndroidManifest.xml:12:13-14:85
+559                android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar"
+559-->[com.google.firebase:firebase-ml-vision:24.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\268b4a3c7736f9987a726c3ce41196fa\transformed\jetified-firebase-ml-vision-24.1.0\AndroidManifest.xml:13:17-108
+560                android:value="com.google.firebase.components.ComponentRegistrar" />
+560-->[com.google.firebase:firebase-ml-vision:24.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\268b4a3c7736f9987a726c3ce41196fa\transformed\jetified-firebase-ml-vision-24.1.0\AndroidManifest.xml:14:17-82
+561            <meta-data
+561-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
+562                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+562-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
+563                android:value="com.google.firebase.components.ComponentRegistrar" />
+563-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
+564            <meta-data
+564-->[com.google.firebase:firebase-functions:20.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\5461c2e774059553e335d61802b5c87e\transformed\jetified-firebase-functions-20.2.0\AndroidManifest.xml:17:13-19:85
+565                android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar"
+565-->[com.google.firebase:firebase-functions:20.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\5461c2e774059553e335d61802b5c87e\transformed\jetified-firebase-functions-20.2.0\AndroidManifest.xml:18:17-111
+566                android:value="com.google.firebase.components.ComponentRegistrar" />
+566-->[com.google.firebase:firebase-functions:20.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\5461c2e774059553e335d61802b5c87e\transformed\jetified-firebase-functions-20.2.0\AndroidManifest.xml:19:17-82
+567            <meta-data
+567-->[com.google.firebase:firebase-ml-common:22.1.2] C:\Users\Kuro\.gradle\caches\transforms-3\47b7131e601e756372225e45dbdfc04a\transformed\jetified-firebase-ml-common-22.1.2\AndroidManifest.xml:11:13-13:85
+568                android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar"
+568-->[com.google.firebase:firebase-ml-common:22.1.2] C:\Users\Kuro\.gradle\caches\transforms-3\47b7131e601e756372225e45dbdfc04a\transformed\jetified-firebase-ml-common-22.1.2\AndroidManifest.xml:12:17-117
+569                android:value="com.google.firebase.components.ComponentRegistrar" />
+569-->[com.google.firebase:firebase-ml-common:22.1.2] C:\Users\Kuro\.gradle\caches\transforms-3\47b7131e601e756372225e45dbdfc04a\transformed\jetified-firebase-ml-common-22.1.2\AndroidManifest.xml:13:17-82
+570            <meta-data
+570-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\3f7f022b41aa7986f901392bbc29f3ed\transformed\jetified-firebase-iid-20.0.1\AndroidManifest.xml:32:13-34:85
+571                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+571-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\3f7f022b41aa7986f901392bbc29f3ed\transformed\jetified-firebase-iid-20.0.1\AndroidManifest.xml:33:17-96
+572                android:value="com.google.firebase.components.ComponentRegistrar" />
+572-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\3f7f022b41aa7986f901392bbc29f3ed\transformed\jetified-firebase-iid-20.0.1\AndroidManifest.xml:34:17-82
+573            <meta-data
+573-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\f702fa6305e5ea0e9d8cd79d521a87cd\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:31:13-33:85
+574                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+574-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\f702fa6305e5ea0e9d8cd79d521a87cd\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:32:17-139
+575                android:value="com.google.firebase.components.ComponentRegistrar" />
+575-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\f702fa6305e5ea0e9d8cd79d521a87cd\transformed\jetified-play-services-measurement-api-21.1.1\AndroidManifest.xml:33:17-82
+576            <meta-data
+576-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\1a3245af5ccf33cd02ded7aa00aeb244\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+577                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+577-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\1a3245af5ccf33cd02ded7aa00aeb244\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+578                android:value="com.google.firebase.components.ComponentRegistrar" />
+578-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\1a3245af5ccf33cd02ded7aa00aeb244\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+579        </service>
+580
+581        <activity
+581-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
+582            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+582-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
+583            android:excludeFromRecents="true"
+583-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
+584            android:exported="true"
+584-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
+585            android:launchMode="singleTask"
+585-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
+586            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+586-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
+587            <intent-filter>
+587-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
+588                <action android:name="android.intent.action.VIEW" />
+588-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+588-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+589
+590                <category android:name="android.intent.category.DEFAULT" />
+590-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
+590-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
+591                <category android:name="android.intent.category.BROWSABLE" />
+591-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+591-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
+592
+593                <data
+593-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
+594                    android:host="firebase.auth"
+594-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
+595                    android:path="/"
+595-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
+596                    android:scheme="genericidp" />
+596-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
+597            </intent-filter>
+598        </activity>
+599        <activity
+599-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
+600            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+600-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
+601            android:excludeFromRecents="true"
+601-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
+602            android:exported="true"
+602-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
+603            android:launchMode="singleTask"
+603-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
+604            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+604-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
+605            <intent-filter>
+605-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
+606                <action android:name="android.intent.action.VIEW" />
+606-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+606-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+607
+608                <category android:name="android.intent.category.DEFAULT" />
+608-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
+608-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
+609                <category android:name="android.intent.category.BROWSABLE" />
+609-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+609-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
+610
+611                <data
+611-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
+612                    android:host="firebase.auth"
+612-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
+613                    android:path="/"
+613-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
+614                    android:scheme="recaptcha" />
+614-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
+615            </intent-filter>
+616        </activity>
+617
+618        <receiver
+618-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\3f7f022b41aa7986f901392bbc29f3ed\transformed\jetified-firebase-iid-20.0.1\AndroidManifest.xml:37:9-44:20
+619            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+619-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\3f7f022b41aa7986f901392bbc29f3ed\transformed\jetified-firebase-iid-20.0.1\AndroidManifest.xml:38:13-78
+620            android:exported="true"
+620-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\3f7f022b41aa7986f901392bbc29f3ed\transformed\jetified-firebase-iid-20.0.1\AndroidManifest.xml:39:13-36
+621            android:permission="com.google.android.c2dm.permission.SEND" >
+621-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\3f7f022b41aa7986f901392bbc29f3ed\transformed\jetified-firebase-iid-20.0.1\AndroidManifest.xml:40:13-73
+622            <intent-filter>
+622-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\3f7f022b41aa7986f901392bbc29f3ed\transformed\jetified-firebase-iid-20.0.1\AndroidManifest.xml:41:13-43:29
+623                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+623-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\3f7f022b41aa7986f901392bbc29f3ed\transformed\jetified-firebase-iid-20.0.1\AndroidManifest.xml:42:17-81
+623-->[com.google.firebase:firebase-iid:20.0.1] C:\Users\Kuro\.gradle\caches\transforms-3\3f7f022b41aa7986f901392bbc29f3ed\transformed\jetified-firebase-iid-20.0.1\AndroidManifest.xml:42:25-78
+624            </intent-filter>
+625        </receiver>
+626
+627        <provider
+627-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+628            android:name="com.google.firebase.provider.FirebaseInitProvider"
+628-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+629            android:authorities="com.example.j_idetect.firebaseinitprovider"
+629-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+630            android:directBootAware="true"
+630-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+631            android:exported="false"
+631-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+632            android:initOrder="100" />
+632-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+633
+634        <service
+634-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\Kuro\.gradle\caches\transforms-3\7c3a4edc4d8c6e8852cf1da2f8b76a7a\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:9:9-15:19
+635            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+635-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\Kuro\.gradle\caches\transforms-3\7c3a4edc4d8c6e8852cf1da2f8b76a7a\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:10:13-91
+636            android:directBootAware="true"
+636-->[com.google.mlkit:common:18.5.0] C:\Users\Kuro\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:17:13-43
+637            android:exported="false" >
+637-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\Kuro\.gradle\caches\transforms-3\7c3a4edc4d8c6e8852cf1da2f8b76a7a\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:11:13-37
+638            <meta-data
+638-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\Kuro\.gradle\caches\transforms-3\7c3a4edc4d8c6e8852cf1da2f8b76a7a\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:12:13-14:85
+639                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+639-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\Kuro\.gradle\caches\transforms-3\7c3a4edc4d8c6e8852cf1da2f8b76a7a\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:13:17-114
+640                android:value="com.google.firebase.components.ComponentRegistrar" />
+640-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\Kuro\.gradle\caches\transforms-3\7c3a4edc4d8c6e8852cf1da2f8b76a7a\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:14:17-82
+641            <meta-data
+641-->[com.google.mlkit:vision-common:17.2.1] C:\Users\Kuro\.gradle\caches\transforms-3\3047901aab221a15e6364e9345f4691c\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:12:13-14:85
+642                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+642-->[com.google.mlkit:vision-common:17.2.1] C:\Users\Kuro\.gradle\caches\transforms-3\3047901aab221a15e6364e9345f4691c\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:13:17-124
+643                android:value="com.google.firebase.components.ComponentRegistrar" />
+643-->[com.google.mlkit:vision-common:17.2.1] C:\Users\Kuro\.gradle\caches\transforms-3\3047901aab221a15e6364e9345f4691c\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:14:17-82
+644            <meta-data
+644-->[com.google.mlkit:common:18.5.0] C:\Users\Kuro\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:20:13-22:85
+645                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+645-->[com.google.mlkit:common:18.5.0] C:\Users\Kuro\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:21:17-120
+646                android:value="com.google.firebase.components.ComponentRegistrar" />
+646-->[com.google.mlkit:common:18.5.0] C:\Users\Kuro\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:22:17-82
+647        </service>
+648
+649        <provider
+649-->[com.google.mlkit:common:18.5.0] C:\Users\Kuro\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:9:9-13:38
+650            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+650-->[com.google.mlkit:common:18.5.0] C:\Users\Kuro\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:10:13-78
+651            android:authorities="com.example.j_idetect.mlkitinitprovider"
+651-->[com.google.mlkit:common:18.5.0] C:\Users\Kuro\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:11:13-69
+652            android:exported="false"
+652-->[com.google.mlkit:common:18.5.0] C:\Users\Kuro\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:12:13-37
+653            android:initOrder="99" />
+653-->[com.google.mlkit:common:18.5.0] C:\Users\Kuro\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:13:13-35
+654
+655        <activity
+655-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9164f9658c4cd5fa0c137f9a5fcf4fb0\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+656            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+656-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9164f9658c4cd5fa0c137f9a5fcf4fb0\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+657            android:exported="false"
+657-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9164f9658c4cd5fa0c137f9a5fcf4fb0\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+658            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+658-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\9164f9658c4cd5fa0c137f9a5fcf4fb0\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+659
+660        <receiver
+660-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\bf96aa919d4bed3dc2dba8bfaac2f6d9\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:29:9-33:20
+661            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+661-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\bf96aa919d4bed3dc2dba8bfaac2f6d9\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:30:13-85
+662            android:enabled="true"
+662-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\bf96aa919d4bed3dc2dba8bfaac2f6d9\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:31:13-35
+663            android:exported="false" >
+663-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\bf96aa919d4bed3dc2dba8bfaac2f6d9\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:32:13-37
+664        </receiver>
+665
+666        <service
+666-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\bf96aa919d4bed3dc2dba8bfaac2f6d9\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:35:9-38:40
+667            android:name="com.google.android.gms.measurement.AppMeasurementService"
+667-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\bf96aa919d4bed3dc2dba8bfaac2f6d9\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:36:13-84
+668            android:enabled="true"
+668-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\bf96aa919d4bed3dc2dba8bfaac2f6d9\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:37:13-35
+669            android:exported="false" />
+669-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\bf96aa919d4bed3dc2dba8bfaac2f6d9\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:38:13-37
+670        <service
+670-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\bf96aa919d4bed3dc2dba8bfaac2f6d9\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:39:9-43:72
+671            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+671-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\bf96aa919d4bed3dc2dba8bfaac2f6d9\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:40:13-87
+672            android:enabled="true"
+672-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\bf96aa919d4bed3dc2dba8bfaac2f6d9\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:41:13-35
+673            android:exported="false"
+673-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\bf96aa919d4bed3dc2dba8bfaac2f6d9\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:42:13-37
+674            android:permission="android.permission.BIND_JOB_SERVICE" />
+674-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Kuro\.gradle\caches\transforms-3\bf96aa919d4bed3dc2dba8bfaac2f6d9\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:43:13-69
+675
+676        <meta-data
+676-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\de6489bed9e6c347316284be579eccf0\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+677            android:name="com.google.android.gms.version"
+677-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\de6489bed9e6c347316284be579eccf0\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+678            android:value="@integer/google_play_services_version" />
+678-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Kuro\.gradle\caches\transforms-3\de6489bed9e6c347316284be579eccf0\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+679
+680        <provider
+680-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+681            android:name="androidx.startup.InitializationProvider"
+681-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+682            android:authorities="com.example.j_idetect.androidx-startup"
+682-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+683            android:exported="false" >
+683-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+684            <meta-data
+684-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+685                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+685-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+686                android:value="androidx.startup" />
+686-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Kuro\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+687            <meta-data
+687-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Kuro\.gradle\caches\transforms-3\89ff0e55e6ae9f2bfe5511814da6c859\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+688                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+688-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Kuro\.gradle\caches\transforms-3\89ff0e55e6ae9f2bfe5511814da6c859\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+689                android:value="androidx.startup" />
+689-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Kuro\.gradle\caches\transforms-3\89ff0e55e6ae9f2bfe5511814da6c859\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+690        </provider>
+691
+692        <uses-library
+692-->[androidx.window:window:1.0.0] C:\Users\Kuro\.gradle\caches\transforms-3\a40b6d0dfc452e7ffaf6fb0ab3988040\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+693            android:name="androidx.window.extensions"
+693-->[androidx.window:window:1.0.0] C:\Users\Kuro\.gradle\caches\transforms-3\a40b6d0dfc452e7ffaf6fb0ab3988040\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+694            android:required="false" />
+694-->[androidx.window:window:1.0.0] C:\Users\Kuro\.gradle\caches\transforms-3\a40b6d0dfc452e7ffaf6fb0ab3988040\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+695        <uses-library
+695-->[androidx.window:window:1.0.0] C:\Users\Kuro\.gradle\caches\transforms-3\a40b6d0dfc452e7ffaf6fb0ab3988040\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+696            android:name="androidx.window.sidecar"
+696-->[androidx.window:window:1.0.0] C:\Users\Kuro\.gradle\caches\transforms-3\a40b6d0dfc452e7ffaf6fb0ab3988040\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+697            android:required="false" />
+697-->[androidx.window:window:1.0.0] C:\Users\Kuro\.gradle\caches\transforms-3\a40b6d0dfc452e7ffaf6fb0ab3988040\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+698
+699        <service
+699-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Kuro\.gradle\caches\transforms-3\485d7c1ec84c03d1bb2b8417cb4dfa71\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+700            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+700-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Kuro\.gradle\caches\transforms-3\485d7c1ec84c03d1bb2b8417cb4dfa71\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+701            android:exported="false" >
+701-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Kuro\.gradle\caches\transforms-3\485d7c1ec84c03d1bb2b8417cb4dfa71\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+702            <meta-data
+702-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Kuro\.gradle\caches\transforms-3\485d7c1ec84c03d1bb2b8417cb4dfa71\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+703                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+703-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Kuro\.gradle\caches\transforms-3\485d7c1ec84c03d1bb2b8417cb4dfa71\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+704                android:value="cct" />
+704-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Kuro\.gradle\caches\transforms-3\485d7c1ec84c03d1bb2b8417cb4dfa71\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+705        </service>
+706        <service
+706-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Kuro\.gradle\caches\transforms-3\6dcd93541db5f9402a2177216c89b545\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+707            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+707-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Kuro\.gradle\caches\transforms-3\6dcd93541db5f9402a2177216c89b545\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+708            android:exported="false"
+708-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Kuro\.gradle\caches\transforms-3\6dcd93541db5f9402a2177216c89b545\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+709            android:permission="android.permission.BIND_JOB_SERVICE" >
+709-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Kuro\.gradle\caches\transforms-3\6dcd93541db5f9402a2177216c89b545\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+710        </service>
+711
+712        <receiver
+712-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Kuro\.gradle\caches\transforms-3\6dcd93541db5f9402a2177216c89b545\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+713            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+713-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Kuro\.gradle\caches\transforms-3\6dcd93541db5f9402a2177216c89b545\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+714            android:exported="false" />
+714-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\Kuro\.gradle\caches\transforms-3\6dcd93541db5f9402a2177216c89b545\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+715    </application>
+716
+717</manifest>
